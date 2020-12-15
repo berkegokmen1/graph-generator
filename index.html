@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Graph Generator</title>
+        <link href="style/style.css" rel = "stylesheet" type = "text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    </head>
+    <body id="body" onload="onLoad()" onresize="fix()">
+        <div id="usage-container">
+            <div id="usage">
+                <div id="usage-box">
+                    <h1>GRAPH GENERATOR USAGE</h1>
+                    <div class="usage-box-item">
+                        <img src="images/add_data.png" alt="add_data.png">
+                        <p>Add Data button is used to add data</p>
+                    </div>
+                    <div class="usage-box-item" dir="rtl">
+                        <img src="images/colors.png" alt="add_data.png">
+                        <p>Colors of graphs can be changed by using these buttons</p>
+                    </div>
+                    <div class="usage-box-item">
+                        <img src="images/buttons.png" alt="add_data.png">
+                        <p>Data items can be moved up and down by using arrows<br>They can be deleted by using trash</p>
+                    </div>
+                    <div class="usage-box-item" dir="rtl">
+                        <img src="images/nav.png" alt="add_data.png">
+                        <p>All this information can be displayed by clicking <strong>How</strong><br>You can also see the source code for this project by clicking <strong>Code</strong></p>
+                    </div>
+                    <button id="remove-info-box-btn" onclick="remove_info_box()">OK</button>
+                </div>
+            </div>
+
+        </div>
+
+        <header id="header">
+            <div id="logo-text">GRAPH <br>GENERATOR</div>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="#" class="nav-link" onclick="display_info_box()">Usage</a></li>
+                    <li><a href="#" class="nav-link">Code</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="#"><button class="btn btn-main">Contact</button></a>
+        </header>
+
+        <div id="container">
+            <div id="data-sec" class="box">
+
+
+
+
+                <div id="data-graph-name">
+                    <p id="input-graph-name" contenteditable="true">Graph Name</p>
+                </div> 
+
+
+                <div id="data-buttons">
+                    <button class="btn-data" onclick="add_data_sec()">Add Data</button>
+                    <button class="btn-data btn-small" onclick="use_colors()">Colors</button>
+                    <button class="btn-data btn-small" onclick="dont_use_colors()">No Colors</button>
+                </div>
+
+
+                <!-- CODE WILL BE INSERTED BY JAVASCRIPT-->                   
+                <div id="data-items">
+                    <!-- CODE WILL BE INSERTED BY JAVASCRIPT-->                   
+                </div>
+            </div>
+
+
+
+
+
+
+            <div id="graph-sec" class="box">
+                <div id="graphs-container">
+                    <!-- CODE WILL BE INSERTED BY JAVASCRIPT-->
+                </div>
+
+
+
+
+
+
+
+
+                <div id="graph-values" class="graph-values">
+                    <!-- CODE WILL BE INSERTED BY JAVASCRIPT-->
+                    <p id="graph-value-10" class="graph-value">10</p>
+                    <p id="graph-value-9" class="graph-value">9</p>
+                    <p id="graph-value-8" class="graph-value">8</p>
+                    <p id="graph-value-7" class="graph-value">7</p>
+                    <p id="graph-value-6" class="graph-value">6</p>
+                    <p id="graph-value-5" class="graph-value">5</p>
+                    <p id="graph-value-4" class="graph-value">4</p>
+                    <p id="graph-value-3" class="graph-value">3</p>
+                    <p id="graph-value-2" class="graph-value">2</p>
+                    <p id="graph-value-1" class="graph-value">1</p>
+                    <p id="graph-value-0" class="graph-value">0</p>  
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        
+        <footer id="footer">
+            <div>Made with ❤️ by <span>berkegokmen1</span>.</div>
+            <div id="social-sec">
+                <a href="https://github.com/berkegokmen1" target="_blank" class="social-icon-github social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/berkegokmen1/" target="_blank" class="social-icon-insta social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:ahmetberkegokmen@gmail.com" target="_blank" class="social-icon-mail social-icon"><i class="far fa-envelope"></i></a>
+            </div>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/YOUR_KEY.js" crossorigin="anonymous"></script>
+        <script src="script/script.js"></script>
+        
+    </body>
+</html>
